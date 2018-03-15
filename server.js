@@ -40,7 +40,7 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/', (request, response) => {
     response.render('home.hbs', {
-        pageTitle: "Homepage",
+        pageTitle: "Marnel",
         message: "Welcome to Marnel's Node.js website!"
     });
 });

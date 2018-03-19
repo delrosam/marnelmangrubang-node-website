@@ -10,7 +10,7 @@ p.card-text{
 .card-block{
     padding-bottom:4%;
 }
-.panel-image{
+.card-img-1.panel-image{
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
@@ -26,6 +26,6 @@ p.card-text{
 .add-shadow{
     box-shadow:0px 4px 0px #c9c9c9;
 }
-#card-img-1.panel-image{
-    background-image: url(../img/paul-morris-167780.jpg);
+.card-img-1.panel-image{
+    background-image: url(/img/paul-morris-167780.jpg);
 }

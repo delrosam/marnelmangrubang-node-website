@@ -8,6 +8,8 @@ const {generateMessage} = require('./utils/message');
 
 const publicPath = path.join(__dirname, '../public');
 const partialPath = path.join(__dirname, '../views/partials');
+const modPath = path.join(__dirname, '../views/widgets');
+// const imagePath = path.join(__dirname, '../public/img');
 
 
 const port = process.env.PORT || 3000;
@@ -18,6 +20,7 @@ var io = socketIO(server);
 
 
 hbs.registerPartials(partialPath);
+hbs.registerPartials(modPath);
 
 
 app.set('view engine', 'hbs');
@@ -72,7 +75,11 @@ app.get('/about', (request, response) => {
     });
 });
 
-
+app.get('/cards', (request, response) => {
+    response.render('cards.hbs', {
+        pageTitle: "Card Widgets"
+    });
+});
 
 
 

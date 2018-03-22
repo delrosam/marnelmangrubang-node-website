@@ -1,0 +1,19 @@
+h4.card-title{
+    margin-top:0px;
+}
+p.card-text{
+    font-size:13px;
+}
+.card{
+    margin-bottom:15px;
+}
+.panel-image{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    padding:30%;
+    margin-bottom:4%;
+}
+.card-img-1-2.panel-image{
+    background-image: url(/img/paul-morris-167780.jpg);
+}

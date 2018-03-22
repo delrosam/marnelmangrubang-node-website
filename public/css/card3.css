@@ -1,0 +1,49 @@
+.fullsize{
+    padding:0px;
+}
+.card.zoom-wrap{
+    margin:0;
+}
+.background-zoom{
+    padding:30% 10%;
+    background-color:#00000091;
+    color:#fff;
+}
+div.zoom-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+div.zoom-wrap > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+}
+
+
+.sunset-bg{
+    background-image: url(/img/denys-nevozhai-185408.jpg);
+}
+.blowing-snow-bg{
+    background-image: url(/img/teddy-kelley-179100.jpg);
+}
+.snowy-road-bg{
+    background-image: url(/img/simon-matzinger-202022.jpg);
+}

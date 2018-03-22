@@ -1,0 +1,56 @@
+.fullsize{
+    padding:0px;
+}
+.overlay-hidden .overlay-back{
+    background-color:#0000009e;
+}
+.overlay-hidden .overlay-back .card-title,
+.overlay-hidden .overlay-back .card-text,
+.overlay-hidden .overlay-back .btn{
+    opacity:0;
+}
+div.zoom-wrap.overlay-hidden > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.overlay-hidden:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    opacity:.9;
+}
+div.zoom-wrap.overlay-hidden:hover > .overlay-back{
+    background-color:#00000050;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-title,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-text,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
+    color:#fff;
+    opacity:1;
+}
+.mac-office-bg{
+    background-image: url(/img/annie-spratt-294450.jpg);
+}
+.holding-up-phone-bg{
+    background-image: url(/img/zach-meaney-248676.jpg);
+}
+.phone-colors-bg{
+    background-image: url(/img/rodion-kutsaev-184298.jpg);
+}

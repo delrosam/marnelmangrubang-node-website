@@ -1,5 +1,7 @@
 const path = require('path');
 const http = require('http');
+const https = require('https');
+const request = require('request');
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
@@ -127,7 +129,33 @@ app.get('/bad', (request, response) => {
 
 
 
+// https.get('https://sitecore-cd-test-site-westus.azurewebsites.net/api/v1/SmokeTest/GetAllBaseItems?templateGiud=E59AEBB8-B654-40A9-991F-4D4BA4FEA2FB', (res) => {
+//   console.log('statusCode:', res.statusCode);
+//   console.log('headers:', res.headers);
 
+//   res.on('data', (d) => {
+//     process.stdout.write(d);
+//     //console.log(d);
+//   });
+
+// }).on('error', (e) => {
+//   console.error(e);
+// });
+
+
+// request.get({
+//     url:'https://www.alaskaair.com/api/v1/AirportsLite/GetAllAirportsLite',
+//     //url: 'https://sitecore-cd-test-site-westus.azurewebsites.net/api/v1/SmokeTest/GetAllBaseItems?templateGiud=E59AEBB8-B654-40A9-991F-4D4BA4FEA2FB',
+//     json: true
+// }, (error, response, body) => {
+
+//     var bodyString = JSON.stringify(body, undefined, 2);
+
+//     console.log(bodyString);
+
+
+
+// });
 
 
 
